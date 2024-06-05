@@ -1,27 +1,44 @@
-# MiniDashboard
+# My Mini Ticketing System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This is a simple Angular application with functionalities for viewing, and updating tickets. The app includes a fixed navigation bar, breadcrumbs for navigation, and forms for updating tickets.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before you begin, ensure you have the following installed:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/) (v12 or higher)
+- [Angular CLI](https://angular.io/cli) (v11 or higher)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+Follow these steps to set up and run the application locally.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 1. Clone the Repository
 
-## Running unit tests
+Clone the repository to your local machine:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
 
-## Running end-to-end tests
+### 2. Install Dependencies
+```
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 3. Set Up Fake REST API
+1. Install `json-server` globally:
+```bash
+npm install -g json-server
+```
+2. Start the fake REST API server:
+```bash
+json-server --watch db.json --port 3000
+```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 4. Start the Application
+```bash
+ng serve
+```
+Open your browser and navigate to http://localhost:4200.
